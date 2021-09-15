@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ShoppingCart\\BrandBucket\\BrandBucket\\BrandBucket.csproj": {}
+    "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket\\BrandBucket.csproj": {}
   },
   "projects": {
-    "C:\\ShoppingCart\\BrandBucket\\BrandBucket\\BrandBucket.csproj": {
+    "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket\\BrandBucket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ShoppingCart\\BrandBucket\\BrandBucket\\BrandBucket.csproj",
+        "projectUniqueName": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket\\BrandBucket.csproj",
         "projectName": "BrandBucket",
-        "projectPath": "C:\\ShoppingCart\\BrandBucket\\BrandBucket\\BrandBucket.csproj",
+        "projectPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket\\BrandBucket.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\ShoppingCart\\BrandBucket\\BrandBucket\\obj\\",
+        "outputPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Mailjet.Api": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
               "version": "[2.2.0, )"
