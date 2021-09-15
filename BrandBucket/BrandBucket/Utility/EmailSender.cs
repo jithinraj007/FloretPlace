@@ -1,6 +1,7 @@
 ﻿using Mailjet.Client;
 using Mailjet.Client.Resources;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,13 @@ namespace BrandBucket.Utility
 {
     public class EmailSender : IEmailSender
     {
+
+        private readonly IConfiguration _configuration;
+        public MailJetSettings _mailJetSettings { get; set; }
+        public EmailSender(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
         public Task SendEmailAsync(string email, string subject, string htmlMessage)
         {
             return Execute(email, subject, htmlMessage);
@@ -19,7 +27,9 @@ namespace BrandBucket.Utility
         public async Task Execute(string email, string subject, string body)
         {
 
-            MailjetClient client = new MailjetClient("13fdc843fb3497e09ecaf3327d104905","60323939cd1f16cafef2aa2c5671560b")
+            _mailJetSettings = _configuration.GetSection("MailJet").Get<MailJetSettings>();
+
+            MailjetClient client = new MailjetClient(_mailJetSettings.ApiKey, _mailJetSettings.SecretKey)
             {
                 Version = ApiVersion.V3_1,
             };
