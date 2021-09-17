@@ -120,7 +120,7 @@ namespace BrandBucket.Areas.Identity.Pages.Account
                     }
                     else
                     {
-                        if (User.IsInRole(WC.AdminRole))
+                        if (!User.IsInRole(WC.AdminRole))
                         {
 
                             await _signInManager.SignInAsync(user, isPersistent: false);
@@ -128,7 +128,7 @@ namespace BrandBucket.Areas.Identity.Pages.Account
                         }
                         else 
                         {
-                            return RedirectToAction("Index");
+                            return Page();
                         }
                         return LocalRedirect(returnUrl);
                     }
