@@ -1,6 +1,7 @@
 ﻿@page
 @model RegisterModel
-@if (User.IsInRole(BrandBucket.WC.AdminRole))
+@using BrandBucket_Utility
+@if (User.IsInRole(WC.AdminRole))
 {
     <h2><b>Register As Admin User</b></h2>
 }
@@ -41,7 +42,7 @@ else
                 <input asp-for="Input.ConfirmPassword" class="form-control" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            @if (User.IsInRole(BrandBucket.WC.AdminRole))
+            @if (User.IsInRole(WC.AdminRole))
             {
                 <button type="submit" class="btn btn-warning">Register As Admin User</button>
 

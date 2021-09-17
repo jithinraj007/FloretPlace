@@ -3062,6 +3062,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "BrandBucket_Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Mailjet.Api": "1.2.2",
+          "Microsoft.AspNetCore.Identity.UI": "5.0.8"
+        },
+        "compile": {
+          "bin/placeholder/BrandBucket_Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BrandBucket_Utility.dll": {}
+        }
       }
     }
   },
@@ -9726,10 +9740,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "BrandBucket_Utility/1.0.0": {
+      "type": "project",
+      "path": "../BrandBucket_Utility/BrandBucket_Utility.csproj",
+      "msbuildProject": "../BrandBucket_Utility/BrandBucket_Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "BrandBucket_Utility >= 1.0.0",
       "Mailjet.Api >= 1.2.2",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.8",
@@ -9767,7 +9787,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj": {
+              "projectPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

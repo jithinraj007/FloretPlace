@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace BrandBucket.Utility
+namespace BrandBucket_Utility
 {
     public static class SessionExtensions
     {

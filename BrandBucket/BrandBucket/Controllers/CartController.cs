@@ -1,7 +1,7 @@
 ﻿using BrandBucket.Data;
 using BrandBucket.Models;
 using BrandBucket.Models.ViewModels;
-using BrandBucket.Utility;
+using BrandBucket_Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;

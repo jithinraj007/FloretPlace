@@ -1,5 +1,5 @@
 using BrandBucket.Data;
-using BrandBucket.Utility;
+using BrandBucket_Utility;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;

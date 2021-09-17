@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BrandBucket.Utility
+namespace BrandBucket_Utility
 {
     public class MailJetSettings
     {

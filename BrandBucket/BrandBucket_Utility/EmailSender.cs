@@ -1,4 +1,5 @@
-﻿using Mailjet.Client;
+﻿using BrandBucket_Utility;
+using Mailjet.Client;
 using Mailjet.Client.Resources;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Configuration;
@@ -8,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BrandBucket.Utility
+namespace BrandBucket_Utility
 {
     public class EmailSender : IEmailSender
     {
