@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BrandBucket.Models
+namespace BrandBucket_Models
 {
     public class Product
     {

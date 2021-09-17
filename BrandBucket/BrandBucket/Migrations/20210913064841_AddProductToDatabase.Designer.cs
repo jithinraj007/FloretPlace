@@ -20,7 +20,7 @@ namespace BrandBucket.Migrations
                 .HasAnnotation("ProductVersion", "5.0.9")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("BrandBucket.Models.Category", b =>
+            modelBuilder.Entity("BrandBucket_Models.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -42,7 +42,7 @@ namespace BrandBucket.Migrations
                     b.ToTable("Category");
                 });
 
-            modelBuilder.Entity("BrandBucket.Models.Product", b =>
+            modelBuilder.Entity("BrandBucket_Models.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -75,9 +75,9 @@ namespace BrandBucket.Migrations
                     b.ToTable("Product");
                 });
 
-            modelBuilder.Entity("BrandBucket.Models.Product", b =>
+            modelBuilder.Entity("BrandBucket_Models.Product", b =>
                 {
-                    b.HasOne("BrandBucket.Models.Category", "Category")
+                    b.HasOne("BrandBucket_Models.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)

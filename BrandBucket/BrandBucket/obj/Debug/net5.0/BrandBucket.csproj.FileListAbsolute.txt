@@ -974,3 +974,7 @@ C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\obj\Debug\net5.0\Raz
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\obj\Debug\net5.0\BrandBucket.csproj.AssemblyReference.cache
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\BrandBucket_Utility.dll
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\BrandBucket_Utility.pdb
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\BrandBucket_Models.dll
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\BrandBucket_Models.pdb

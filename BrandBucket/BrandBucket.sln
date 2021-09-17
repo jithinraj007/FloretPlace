@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrandBucket", "BrandBucket\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrandBucket_Utility", "BrandBucket_Utility\BrandBucket_Utility.csproj", "{3658BEF5-0AF0-4701-B8D9-14E3245E79E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrandBucket_Models", "BrandBucket_Models\BrandBucket_Models.csproj", "{B9C7CE06-C115-41F5-A915-537B8743AE8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3658BEF5-0AF0-4701-B8D9-14E3245E79E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3658BEF5-0AF0-4701-B8D9-14E3245E79E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3658BEF5-0AF0-4701-B8D9-14E3245E79E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9C7CE06-C115-41F5-A915-537B8743AE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9C7CE06-C115-41F5-A915-537B8743AE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9C7CE06-C115-41F5-A915-537B8743AE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9C7CE06-C115-41F5-A915-537B8743AE8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

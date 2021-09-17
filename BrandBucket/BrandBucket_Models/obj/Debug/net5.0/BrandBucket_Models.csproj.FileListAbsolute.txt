@@ -1,0 +1,12 @@
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_Models\obj\Debug\net5.0\BrandBucket_Models.csproj.AssemblyReference.cache
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_Models\obj\Debug\net5.0\BrandBucket_Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_Models\obj\Debug\net5.0\BrandBucket_Models.AssemblyInfoInputs.cache
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_Models\obj\Debug\net5.0\BrandBucket_Models.AssemblyInfo.cs
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_Models\obj\Debug\net5.0\BrandBucket_Models.csproj.CoreCompileInputs.cache
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_Models\bin\Debug\net5.0\BrandBucket_Models.deps.json
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_Models\bin\Debug\net5.0\BrandBucket_Models.dll
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_Models\bin\Debug\net5.0\ref\BrandBucket_Models.dll
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_Models\bin\Debug\net5.0\BrandBucket_Models.pdb
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_Models\obj\Debug\net5.0\BrandBucket_Models.dll
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_Models\obj\Debug\net5.0\ref\BrandBucket_Models.dll
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_Models\obj\Debug\net5.0\BrandBucket_Models.pdb

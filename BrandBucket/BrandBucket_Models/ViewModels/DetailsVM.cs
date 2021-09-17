@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BrandBucket.Models.ViewModels
+namespace BrandBucket_Models.ViewModels
 {
     public class DetailsVM
     {

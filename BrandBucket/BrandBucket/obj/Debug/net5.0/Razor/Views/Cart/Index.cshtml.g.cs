@@ -21,7 +21,7 @@ using BrandBucket;
 #nullable disable
 #nullable restore
 #line 2 "C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\Views\_ViewImports.cshtml"
-using BrandBucket.Models;
+using BrandBucket_Models;
 
 #line default
 #line hidden
@@ -34,7 +34,7 @@ using BrandBucket_Utility;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c9cf2920c92986e1a8b26dc0869ba088f806ae2c", @"/Views/Cart/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4bf1de52a83a688b61051b0d969ad4b967a67ca9", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"385385addcecbc7da1946fdeeb1bd89f65de5cc9", @"/Views/_ViewImports.cshtml")]
     public class Views_Cart_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Product>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BrandBucket_Models\BrandBucket_Models.csproj" />
     <ProjectReference Include="..\BrandBucket_Utility\BrandBucket_Utility.csproj" />
   </ItemGroup>
 

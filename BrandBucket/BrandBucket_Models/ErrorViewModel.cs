@@ -1,6 +1,6 @@
 using System;
 
-namespace BrandBucket.Models
+namespace BrandBucket_Models
 {
     public class ErrorViewModel
     {
