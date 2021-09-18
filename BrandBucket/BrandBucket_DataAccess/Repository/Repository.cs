@@ -34,12 +34,49 @@ namespace BrandBucket_DataAccess.Repository
 
         public T FirstOrDefault(Expression<Func<T, bool>> filter = null, string includeProperties = null, bool isTracking = true)
         {
-            throw new NotImplementedException();
+            IQueryable<T> query = dbSet;
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+            if (includeProperties != null)
+            {
+                foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp);
+                }
+            }
+           
+            if (!isTracking)
+            {
+                query = query.AsNoTracking();
+            }
+            return query.FirstOrDefault();
         }
 
-        public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedEnumerable<T>> orderby = null, string includeProperties = null, bool isTracking = true)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedEnumerable<T>> orderBy = null, string includeProperties = null, bool isTracking = true)
         {
-            throw new NotImplementedException();
+            IQueryable<T> query = dbSet;
+            if (filter != null )
+            {
+                query = query.Where(filter);
+            }
+            if (includeProperties != null)
+            {
+                foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp);
+                }
+            }
+            if (orderBy != null)
+            {
+                query = (IQueryable<T>)orderBy(query);
+            }
+            if (!isTracking)
+            {
+                query = query.AsNoTracking();
+            }
+            return query.ToList();
         }
 
         public void Remove(T entity)
