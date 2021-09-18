@@ -1,4 +1,5 @@
 ﻿using BrandBucket_DataAccess;
+using BrandBucket_DataAccess.Repository.IRepository;
 using BrandBucket_Models;
 using BrandBucket_Utility;
 using Microsoft.AspNetCore.Authorization;
@@ -15,14 +16,14 @@ namespace BrandBucket.Controllers
 
     public class CategoryController : Controller
     {
-        private readonly ApplicationDbContext _db;
-        public CategoryController(ApplicationDbContext db)
+        private readonly ICategoryRepository _catRepo;
+        public CategoryController(ICategoryRepository catRepo)
         {
-            _db = db;
+            _catRepo = catRepo;
         }
         public IActionResult Index()
         {
-            IEnumerable<Category> objList = _db.Category;
+            IEnumerable<Category> objList = _catRepo.GetAll();
             return View(objList);
         }
 
@@ -41,8 +42,8 @@ namespace BrandBucket.Controllers
         {
             if (ModelState.IsValid)
             {
-                _db.Category.Add(obj);
-                _db.SaveChanges();
+                _catRepo.Add(obj);
+                _catRepo.Save();
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -54,7 +55,7 @@ namespace BrandBucket.Controllers
             {
                 return NotFound();
             }
-            var obj = _db.Category.Find(Id);
+            var obj = _catRepo.Find(Id.GetValueOrDefault());
             if (obj == null)
             {
                 return NotFound();
@@ -68,8 +69,8 @@ namespace BrandBucket.Controllers
         {
             if (ModelState.IsValid)
             {
-                _db.Category.Update(obj);
-                _db.SaveChanges();
+                _catRepo.Update(obj);
+                _catRepo.Save();
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -82,7 +83,7 @@ namespace BrandBucket.Controllers
             {
                 return NotFound();
             }
-            var obj = _db.Category.Find(Id);
+            var obj = _catRepo.Find(Id.GetValueOrDefault());
             if (obj == null)
             {
                 return NotFound();
@@ -95,14 +96,14 @@ namespace BrandBucket.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeletePost(int? Id)
         {
-            var obj = _db.Category.Find(Id);
+            var obj = _catRepo.Find(Id.GetValueOrDefault());
             if (obj == null)
             {
                 return NotFound();
             }
 
-            _db.Category.Remove(obj);
-            _db.SaveChanges();
+            _catRepo.Remove(obj);
+            _catRepo.Save();
             return RedirectToAction("Index");
 
 

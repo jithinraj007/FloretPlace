@@ -1,4 +1,6 @@
 using BrandBucket_DataAccess;
+using BrandBucket_DataAccess.Repository;
+using BrandBucket_DataAccess.Repository.IRepository;
 using BrandBucket_Utility;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -43,6 +45,7 @@ namespace BrandBucket
                 Options.Cookie.HttpOnly = true;
                 Options.Cookie.IsEssential = true;
             });
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddControllersWithViews();
         }
 
