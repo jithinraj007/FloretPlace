@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace BrandBucket.Migrations
+namespace BrandBucket_DataAccess.Migrations
 {
     public partial class AddFullNameToUsersTables : Migration
     {

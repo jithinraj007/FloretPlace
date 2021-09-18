@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BrandBucket.Data
+namespace BrandBucket_DataAccess
 {
     public class ApplicationDbContext : IdentityDbContext
     {
