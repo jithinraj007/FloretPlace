@@ -12,5 +12,7 @@ namespace BrandBucket_Utility
         public const string AdminRole = "Admin";
         public const string CustomerRole = "Customer";
         public const string EmailAdmin = "jithinraj.devops@gmail.com";
+        public const string CategoryName = "Category";
+
     }
 }

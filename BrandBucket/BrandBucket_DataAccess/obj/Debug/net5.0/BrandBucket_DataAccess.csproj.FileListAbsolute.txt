@@ -13,3 +13,5 @@ C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_DataAccess\obj\Debug
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_DataAccess\obj\Debug\net5.0\BrandBucket_DataAccess.dll
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_DataAccess\obj\Debug\net5.0\ref\BrandBucket_DataAccess.dll
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_DataAccess\obj\Debug\net5.0\BrandBucket_DataAccess.pdb
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_DataAccess\bin\Debug\net5.0\BrandBucket_Utility.dll
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket_DataAccess\bin\Debug\net5.0\BrandBucket_Utility.pdb

@@ -133,6 +133,9 @@
             "projectReferences": {
               "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj": {
                 "projectPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj"
+              },
+              "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj": {
+                "projectPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj"
               }
             }
           }
@@ -150,6 +153,10 @@
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.10, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
