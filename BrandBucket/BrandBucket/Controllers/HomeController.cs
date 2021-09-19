@@ -1,4 +1,5 @@
 ﻿using BrandBucket_DataAccess;
+using BrandBucket_DataAccess.Repository.IRepository;
 using BrandBucket_Models;
 using BrandBucket_Models.ViewModels;
 using BrandBucket_Utility;
@@ -17,20 +18,22 @@ namespace BrandBucket.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly ApplicationDbContext _db;
+        private readonly IProductRepository _prodRepo;
+        private readonly ICategoryRepository _catRepo;
 
-        public HomeController(ILogger<HomeController> logger, ApplicationDbContext db)
+        public HomeController(ILogger<HomeController> logger, IProductRepository prodRepo, ICategoryRepository catRepo)
         {
             _logger = logger;
-            _db = db;
+            _prodRepo = prodRepo;
+            _catRepo = catRepo;
         }
 
         public IActionResult Index()
         {
             HomeVM homeVM = new HomeVM()
             {
-                Products = _db.Product.Include(u => u.Category),
-                Categories = _db.Category
+                Products = _prodRepo.GetAll(includeProperties: "Category"),
+                Categories = _catRepo.GetAll()
             };
             return View(homeVM);
         }
@@ -47,7 +50,7 @@ namespace BrandBucket.Controllers
 
             DetailsVM detailsVM = new()
             {
-                Product = _db.Product.Include(u => u.Category).Where(u => u.Id == Id).FirstOrDefault(),
+                Product = _prodRepo.FirstOrDefault(u=>u.Id==Id,includeProperties: "Category"),
                 ExistsInCart = false
 
             };

@@ -47,6 +47,10 @@ namespace BrandBucket
             });
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IInquiryHeaderRepository, InquiryHeaderRepository>();
+            services.AddScoped<IInquiryDetailRepository, InquiryDetailRepository>();
+
+
 
             services.AddControllersWithViews();
         }
