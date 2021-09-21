@@ -129,8 +129,14 @@ namespace BrandBucket.Controllers
             ProductUserVM = new ProductUserVM()
             {
                 ApplicationUser = applicationUser,
-                ProductList = prodList.ToList()
             };
+
+            foreach (var cartObj in shoppingCartList)
+            {
+                Product prodTemp = _prodRepo.FirstOrDefault(u => u.Id == cartObj.ProductId);
+                prodTemp.TempQty = cartObj.Quantity;
+                ProductUserVM.ProductList.Add(prodTemp);
+            }
 
 
             return View(ProductUserVM);
