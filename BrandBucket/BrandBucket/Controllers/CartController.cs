@@ -56,9 +56,18 @@ namespace BrandBucket.Controllers
             }
 
             List<int> prodInCart = shoppingCartList.Select(i => i.ProductId).ToList();
-            IEnumerable<Product> prodList = _prodRepo.GetAll(u => prodInCart.Contains(u.Id));
+            IEnumerable<Product> prodListTemp = _prodRepo.GetAll(u => prodInCart.Contains(u.Id));
 
-            return View(prodList);
+            IList<Product> prodList = new List<Product>();
+
+            foreach (var cartObj in shoppingCartList)
+            {
+                Product prodTemp = prodListTemp.FirstOrDefault(u => u.Id == cartObj.ProductId);
+                prodTemp.TempQty = cartObj.Quantity;
+                prodList.Add(prodTemp);
+            }
+
+            return View(prodListTemp);
         }
 
         [HttpPost]

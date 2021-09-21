@@ -68,7 +68,7 @@ namespace BrandBucket.Controllers
 
 
         [HttpPost, ActionName("Details")]
-        public IActionResult DetailsPost(int id)
+        public IActionResult DetailsPost(int id, DetailsVM detailsVM)
         {
             List<ShoppingCart> shoppingCartList = new List<ShoppingCart>();
             if (HttpContext.Session.Get<IEnumerable<ShoppingCart>>(WC.SessionCart) != null
@@ -76,8 +76,9 @@ namespace BrandBucket.Controllers
             {
                 shoppingCartList = HttpContext.Session.Get<List<ShoppingCart>>(WC.SessionCart);
             }
-            shoppingCartList.Add(new ShoppingCart { ProductId = id });
+            shoppingCartList.Add(new ShoppingCart { ProductId = id, Quantity= detailsVM.Product.TempQty});
             HttpContext.Session.Set(WC.SessionCart, shoppingCartList);
+            TempData[WC.Success] = "Successfully added item to the cart";
             return RedirectToAction(nameof(Index));
         }
 
