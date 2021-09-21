@@ -50,6 +50,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "DryIoc.dll": {
+              "target": "Package",
+              "version": "[5.0.0-preview-01, )"
+            },
             "Mailjet.Api": {
               "target": "Package",
               "version": "[1.2.2, )"
@@ -150,6 +154,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.10, )"
