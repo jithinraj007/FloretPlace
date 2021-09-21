@@ -9,6 +9,10 @@ namespace BrandBucket_Models
 {
     public class Product
     {
+        public Product()
+        {
+            TempQty = 1;
+        }
         [Key]
         public int Id { get; set; }
 
@@ -26,6 +30,10 @@ namespace BrandBucket_Models
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         public virtual Category Category { get; set; }
+        [NotMapped]
+        [Range(1,10000)]
+        public int TempQty { get; set; }
+
 
     }
 }
