@@ -990,3 +990,4 @@ C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\Sys
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\DryIoc.dll
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\obj\Debug\net5.0\Razor\Views\Inquiry\Details.cshtml.g.cs
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\obj\Debug\net5.0\Razor\Views\Shared\_Notifications.cshtml.g.cs

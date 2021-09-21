@@ -52,7 +52,7 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" asp-area="" asp-controller="Inquiry" asp-action="Index">Inquiry</a>
-                                  
+
                                 </div>
                             </li>
 
@@ -82,6 +82,7 @@
     </header>
     <div class="container mb-4 pb-4">
         <main role="main" class="pb-3">
+            <partial name="_Notifications" />
             @RenderBody()
         </main>
     </div>

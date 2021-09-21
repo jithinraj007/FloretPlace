@@ -16,5 +16,9 @@ namespace BrandBucket_Utility
         public const string EmailAdmin = "jithinraj.devops@gmail.com";
         public const string CategoryName = "Category";
 
+        public const string Success = "Success";
+        public const string Error = "Error";
+
+
     }
 }
