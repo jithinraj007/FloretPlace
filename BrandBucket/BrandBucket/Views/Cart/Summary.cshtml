@@ -99,10 +99,13 @@
                                     </h4>
                                     <ul class="list-group mb-3">
                                         @{ var orderTotal = 0.0;}
-                                        @for (int i=0; i<Model.ProductList.Count();i++)
+                                        @for (int i = 0; i < Model.ProductList.Count(); i++)
                                         {
                                             <input type="hidden" asp-for="@Model.ProductList[i].Id" />
                                             <input type="hidden" asp-for="@Model.ProductList[i].Name" />
+                                            <input type="hidden" asp-for="@Model.ProductList[i].Price" />
+                                            <input type="hidden" asp-for="@Model.ProductList[i].TempQty" />
+
 
                                             <li class="list-group-item d-flex justify-content-between">
                                                 <div>
@@ -118,7 +121,7 @@
                                                 </div>
                                                 @if (User.IsInRole(BrandBucket_Utility.WC.AdminRole))
                                                 {
-                                            <span class="=text-muted">₹@(Model.ProductList[i].Price * Model.ProductList[i].TempQty)</span>
+                                                    <span class="=text-muted">₹@(Model.ProductList[i].Price * Model.ProductList[i].TempQty)</span>
                                                 }
                                             </li>
                                             orderTotal += Model.ProductList[i].Price * Model.ProductList[i].TempQty;
@@ -128,7 +131,7 @@
                                             <li class="list-group-item d-flex justify-content-between bg-light">
                                                 <small class="text-info"> Total (INR)</small>
                                                 <strong class="text-info">₹@orderTotal</strong>
-</li>
+                                            </li>
                                         }
                                     </ul>
                                 </div>
