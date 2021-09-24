@@ -3,6 +3,7 @@ using BrandBucket_DataAccess.Repository.IRepository;
 using BrandBucket_Models;
 using BrandBucket_Models.ViewModels;
 using BrandBucket_Utility;
+using BrandBucket_Utility.BrainTree;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -30,6 +31,7 @@ namespace BrandBucket.Controllers
         private readonly IInquiryDetailRepository _inqDRepo;
         private readonly IOrderHeaderRepository _orderHRepo;
         private readonly IOrderDetailRepository _orderDRepo;
+        private readonly IBrainTreeGate _brain;
 
 
         [BindProperty]
@@ -37,7 +39,7 @@ namespace BrandBucket.Controllers
         public CartController(ApplicationDbContext db, IWebHostEnvironment webHostEnvironment, IEmailSender emailSender,
             IApplicationUserRepository userRepo, IProductRepository prodRepo,
             IInquiryHeaderRepository inqHRepo, IInquiryDetailRepository inqDRepo,
-             IOrderHeaderRepository orderHRepo, IOrderDetailRepository orderDRepo)
+             IOrderHeaderRepository orderHRepo, IOrderDetailRepository orderDRepo, IBrainTreeGate brain)
         {
 
             _webHostEnvironment = webHostEnvironment;
@@ -48,6 +50,7 @@ namespace BrandBucket.Controllers
             _inqDRepo = inqDRepo;
             _orderDRepo = orderDRepo;
             _orderHRepo = orderHRepo;
+            _brain = brain;
         }
         public IActionResult Index()
         {
@@ -110,6 +113,9 @@ namespace BrandBucket.Controllers
                 {
                     applicationUser = new ApplicationUser();
                 }
+                var gateway = _brain.GetGateway();
+                var clientToken = gateway.ClientToken.Generate();
+                ViewBag.ClientToken = clientToken;
             }
             else
             {
