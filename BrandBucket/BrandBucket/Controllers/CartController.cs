@@ -1,4 +1,5 @@
-﻿using BrandBucket_DataAccess;
+﻿using Braintree;
+using BrandBucket_DataAccess;
 using BrandBucket_DataAccess.Repository.IRepository;
 using BrandBucket_Models;
 using BrandBucket_Models.ViewModels;
@@ -156,7 +157,7 @@ namespace BrandBucket.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ActionName("Summary")]
-        public async Task<IActionResult> SummaryPost(ProductUserVM ProductUserVM)
+        public async Task<IActionResult> SummaryPost( IFormCollection collection,ProductUserVM ProductUserVM)
         {
 
 
@@ -203,8 +204,33 @@ namespace BrandBucket.Controllers
                     _orderDRepo.Add(orderDetail);
                 }
                 _orderDRepo.Save();
-                return RedirectToAction(nameof(InquiryConfirmation), new { id = orderHeader.Id });
 
+                string nonceFromTheClient = collection["payment_method_nonce"];
+                var request = new TransactionRequest
+                {
+                    Amount = Convert.ToDecimal(orderHeader.FinalOrderTotal),
+                    PaymentMethodNonce = nonceFromTheClient,
+                    OrderId = orderHeader.Id.ToString(),
+                    Options = new TransactionOptionsRequest
+                    {
+                        SubmitForSettlement = true
+                    }
+                };
+
+                var gateway = _brain.GetGateway();
+                Result<Transaction> result = gateway.Transaction.Sale(request);
+                if (result.Target.ProcessorResponseText == "Approved")
+                {
+                    orderHeader.TransactionId = result.Target.Id;
+                    orderHeader.OrderStatus = WC.StatusApproved;
+                }
+                else
+                {
+                    orderHeader.OrderStatus = WC.StatusCancelled;
+                }
+                _orderHRepo.Save();
+
+                return RedirectToAction(nameof(InquiryConfirmation), new { id = orderHeader.Id });
 
             }
             else
