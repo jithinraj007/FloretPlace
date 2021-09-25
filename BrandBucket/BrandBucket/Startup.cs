@@ -57,6 +57,11 @@ namespace BrandBucket
             services.AddScoped<IOrderHeaderRepository, OrderHeaderRepository>();
             services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
             services.AddScoped<IApplicationUserRepository, ApplicationUserRepository>();
+            services.AddAuthentication().AddFacebook(Options =>
+            {
+                Options.AppId = "393155135799065";
+                Options.AppSecret = "dca8d1fb753759e7326ae1c81b9e3e99";
+            });
        
 
 

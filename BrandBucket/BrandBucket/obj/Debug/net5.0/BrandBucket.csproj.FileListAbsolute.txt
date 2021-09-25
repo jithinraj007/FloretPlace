@@ -993,3 +993,4 @@ C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\obj\Debug\net5.0\Raz
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\obj\Debug\net5.0\Razor\Views\Shared\_Notifications.cshtml.g.cs
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\Braintree.dll
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Facebook.dll

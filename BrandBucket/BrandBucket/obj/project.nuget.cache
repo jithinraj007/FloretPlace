@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lPhUjwwRK6hnZi4QbzreAgYGp0YdYxYu5YgoQVV7nHuPX8r+pf6XLfF47PpSYB2fcQ4SWa5TY4dnv35OYfuRBg==",
+  "dgSpecHash": "N7CRNVDPslTeX4AZwjmeq8FYh5nh0PMquJDfHV4zW6Ratet4y0YUMJ6t+0aGTcNj9U3vNCL/OmcEZZVa2b7Rig==",
   "success": true,
   "projectFilePath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket\\BrandBucket.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\5.0.10\\microsoft.aspnetcore.authentication.facebook.5.0.10.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.10\\microsoft.aspnetcore.cryptography.internal.5.0.10.nupkg.sha512",
