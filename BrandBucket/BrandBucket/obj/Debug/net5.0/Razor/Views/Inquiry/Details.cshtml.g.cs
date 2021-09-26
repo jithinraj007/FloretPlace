@@ -27,7 +27,7 @@ using BrandBucket_Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fa78ec37d0676c03359fe089be8e7d313fb13720", @"/Views/Inquiry/Details.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"385385addcecbc7da1946fdeeb1bd89f65de5cc9", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b9c684f36e8c4f368cf3764dbfc8817615bbd045", @"/Views/_ViewImports.cshtml")]
     public class Views_Inquiry_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<BrandBucket_Models.ViewModels.InquiryVM>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

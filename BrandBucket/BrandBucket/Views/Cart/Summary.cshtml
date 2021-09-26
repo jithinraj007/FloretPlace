@@ -1,6 +1,4 @@
-﻿
-
-@model BrandBucket_Models.ViewModels.ProductUserVM
+﻿@model BrandBucket_Models.ViewModels.ProductUserVM
 
 <form method="post" id="payment-form">
     <br />
@@ -13,7 +11,7 @@
                         Order Summary
                     </div>
                     <div class="col-6 text-right">
-                        <a class="btn btn-outline-info btn-sm">Back to Cart</a>
+                        <a class="btn btn-outline-info btn-sm" asp-action="Index">Back to Cart</a>
                     </div>
                 </div>
                 <div class="card-body">
@@ -116,7 +114,7 @@
                                                     }
                                                     else
                                                     {
-                                                        <small class="text-muted">Price per Qty : ₹@Model.ProductList[i].Price</small>
+                                                        <small class="text-muted">Price : ₹@Model.ProductList[i].Price</small>
                                                     }
                                                 </div>
                                                 @if (User.IsInRole(BrandBucket_Utility.WC.AdminRole))
@@ -158,7 +156,6 @@
                             else
                             {
                                 <button type="submit" class="btn btn-primary form-control">Submit Inquiry</button>
-
                             }
                         </div>
                     </div>

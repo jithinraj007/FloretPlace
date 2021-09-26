@@ -994,3 +994,6 @@ C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\obj\Debug\net5.0\Raz
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\Braintree.dll
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\Syncfusion.EJ2.dll
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\Syncfusion.Licensing.dll
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\obj\Debug\net5.0\Razor\Views\Order\Index.cshtml.g.cs
