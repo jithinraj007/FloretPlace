@@ -102,8 +102,6 @@ namespace BrandBucket.Areas.Identity.Pages.Account
                         await _userManager.AddToRoleAsync(user, WC.CustomerRole);
                     }
 
-
-                    await _userManager.AddToRoleAsync(user, WC.AdminRole);
                     _logger.LogInformation("User created a new account with password.");
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -123,17 +121,17 @@ namespace BrandBucket.Areas.Identity.Pages.Account
                     }
                     else
                     {
-                        if (!User.IsInRole(WC.AdminRole))
+                        if (User.IsInRole(WC.AdminRole))
                         {
-
-                            await _signInManager.SignInAsync(user, isPersistent: false);
-
+                            TempData[WC.Success] = user.FullName + "has been registered";
+                            return RedirectToAction("Index", "Home");
                         }
                         else 
                         {
-                            return Page();
+                            await _signInManager.SignInAsync(user, isPersistent: false);
+                            return LocalRedirect(returnUrl);
                         }
-                        return LocalRedirect(returnUrl);
+                      
                     }
                 }
                 foreach (var error in result.Errors)

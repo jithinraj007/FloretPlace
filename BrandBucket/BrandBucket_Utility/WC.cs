@@ -22,7 +22,7 @@ namespace BrandBucket_Utility
 
         public const string StatusPending = "Pending";
         public const string StatusApproved = "Approved";
-        public const string StatusInProgress = "Progress";
+        public const string StatusInProcess = "Processing";
         public const string StatusShipped = "Shipped";
         public const string StatusCancelled = "Cancelled";
         public const string StatusReFunded = "ReFunded";
@@ -30,7 +30,7 @@ namespace BrandBucket_Utility
         public static readonly IEnumerable<string> listStatus = new ReadOnlyCollection<string>(
             new List<string>
             {
-                StatusApproved,StatusCancelled,StatusInProgress,StatusPending,StatusReFunded,StatusShipped
+                StatusApproved,StatusCancelled,StatusInProcess,StatusPending,StatusReFunded,StatusShipped
             });
 
     }

@@ -997,3 +997,4 @@ C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\Mic
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\Syncfusion.EJ2.dll
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\bin\Debug\net5.0\Syncfusion.Licensing.dll
 C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\obj\Debug\net5.0\Razor\Views\Order\Index.cshtml.g.cs
+C:\ShoppingCartProject\shoppingcart\BrandBucket\BrandBucket\obj\Debug\net5.0\Razor\Views\Order\Details.cshtml.g.cs

@@ -31,7 +31,7 @@ namespace BrandBucket_Models
         [ForeignKey("CategoryId")]
         public virtual Category Category { get; set; }
         [NotMapped]
-        [Range(1,10000)]
+        [Range(1,10000,ErrorMessage ="Select atleast one item!.")]
         public int TempQty { get; set; }
 
 
