@@ -1,4 +1,5 @@
 using BrandBucket_DataAccess;
+using BrandBucket_DataAccess.Initializer;
 using BrandBucket_DataAccess.Repository;
 using BrandBucket_DataAccess.Repository.IRepository;
 using BrandBucket_Utility;
@@ -57,6 +58,7 @@ namespace BrandBucket
             services.AddScoped<IOrderHeaderRepository, OrderHeaderRepository>();
             services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
             services.AddScoped<IApplicationUserRepository, ApplicationUserRepository>();
+            services.AddScoped<IDbInitializer, DbInitializer>();
             services.AddAuthentication().AddFacebook(Options =>
             {
                 Options.AppId = "393155135799065";
@@ -69,7 +71,7 @@ namespace BrandBucket
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDbInitializer dbInitializer)
         {
             if (env.IsDevelopment())
             {
@@ -87,6 +89,7 @@ namespace BrandBucket
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
+            dbInitializer.Initialize();
             app.UseSession();
             app.UseEndpoints(endpoints =>
             {
