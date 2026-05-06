@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gU+BY5NcwsY=",
+  "dgSpecHash": "B0lVNnnMJ2I=",
   "success": true,
   "projectFilePath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj",
   "expectedPackageFiles": [
@@ -16,15 +16,5 @@
     "C:\\Users\\dme581\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
     "C:\\Users\\dme581\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Error occurred while getting package vulnerability data: There is not enough space on the disk.\r\n",
-      "projectPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj",
-      "warningLevel": 1,
-      "filePath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }
