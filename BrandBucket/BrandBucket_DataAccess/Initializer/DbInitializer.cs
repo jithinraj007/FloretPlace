@@ -31,32 +31,66 @@ namespace BrandBucket_DataAccess.Initializer
                     _db.Database.Migrate();
                 }
             }
-            catch(Exception ex)
+            catch(Exception)
             {
 
             }
 
-            if (_roleManager.RoleExistsAsync(WC.AdminRole).GetAwaiter().GetResult())
+            try
             {
-                _roleManager.CreateAsync(new IdentityRole(WC.AdminRole)).GetAwaiter().GetResult();
-                _roleManager.CreateAsync(new IdentityRole(WC.CustomerRole)).GetAwaiter().GetResult();
+                if (!_roleManager.RoleExistsAsync(WC.AdminRole).GetAwaiter().GetResult())
+                {
+                    _roleManager.CreateAsync(new IdentityRole(WC.AdminRole)).GetAwaiter().GetResult();
+                }
+
+                if (!_roleManager.RoleExistsAsync(WC.CustomerRole).GetAwaiter().GetResult())
+                {
+                    _roleManager.CreateAsync(new IdentityRole(WC.CustomerRole)).GetAwaiter().GetResult();
+                }
             }
-            else
+            catch
+            {
+                // If the configured SQL user cannot access identity role tables,
+                // skip seed logic instead of crashing the application startup.
+                return;
+            }
+
+            const string adminEmail = "jithinrajkalarikkal@gmail.com";
+            const string adminUserName = "jithinrajkalarikkal007";
+            const string adminPassword = "Jithin123.";
+
+            var existingAdmin = _db.ApplicationUser
+                .OrderBy(u => u.Id)
+                .FirstOrDefault(u => u.NormalizedEmail == adminEmail.ToUpper());
+
+            if (existingAdmin != null)
+            {
+                if (!_userManager.IsInRoleAsync(existingAdmin, WC.AdminRole).GetAwaiter().GetResult())
+                {
+                    _userManager.AddToRoleAsync(existingAdmin, WC.AdminRole).GetAwaiter().GetResult();
+                }
+                return;
+            }
+
+            ApplicationUser user = new ApplicationUser
+            {
+                UserName = adminUserName,
+                Email = adminEmail,
+                EmailConfirmed = true,
+                FullName = "Jithinraj",
+                PhoneNumber = "1111111111"
+            };
+
+            var createResult = _userManager.CreateAsync(user, adminPassword).GetAwaiter().GetResult();
+            if (!createResult.Succeeded)
             {
                 return;
             }
 
-            _userManager.CreateAsync(new ApplicationUser
+            if (!_userManager.IsInRoleAsync(user, WC.AdminRole).GetAwaiter().GetResult())
             {
-                UserName = "jithinrajkalarikkal007",
-                Email = "jithinrajkalarikkal@gmail.com",
-                EmailConfirmed = true,
-                FullName = "Jithinraj",
-                PhoneNumber = "1111111111"
-            }, "Jithin123.").GetAwaiter().GetResult();
-
-            ApplicationUser user = _db.ApplicationUser.FirstOrDefault(u => u.Email == "jithinrajkalarikkal@gmail.com");
-            _userManager.AddToRoleAsync(user, WC.AdminRole).GetAwaiter().GetResult();
+                _userManager.AddToRoleAsync(user, WC.AdminRole).GetAwaiter().GetResult();
+            }
         }
     }
 }

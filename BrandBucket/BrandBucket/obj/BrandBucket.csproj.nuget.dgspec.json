@@ -1,41 +1,48 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket\\BrandBucket.csproj": {}
+    "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket\\BrandBucket.csproj": {}
   },
   "projects": {
-    "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket\\BrandBucket.csproj": {
+    "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket\\BrandBucket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket\\BrandBucket.csproj",
+        "projectUniqueName": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket\\BrandBucket.csproj",
         "projectName": "BrandBucket",
-        "projectPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket\\BrandBucket.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket\\obj\\",
+        "projectPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket\\BrandBucket.csproj",
+        "packagesPath": "C:\\Users\\dme581\\.nuget\\packages\\",
+        "outputPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\dme581\\Application Data\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://build.idb-sys.com/app/nuget/feed/Development/DevelopmentGenerations/v2": {},
+          "https://build.idb-sys.com/app/nuget/feed/Production/DevelopmentProduction/v2": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_DataAccess\\BrandBucket_DataAccess.csproj": {
-                "projectPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_DataAccess\\BrandBucket_DataAccess.csproj"
+              "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_DataAccess\\BrandBucket_DataAccess.csproj": {
+                "projectPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_DataAccess\\BrandBucket_DataAccess.csproj"
               },
-              "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj": {
-                "projectPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj"
+              "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj": {
+                "projectPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj"
               },
-              "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj": {
-                "projectPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj"
+              "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj": {
+                "projectPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj"
               }
             }
           }
@@ -44,15 +51,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
           "dependencies": {
-            "DryIoc.dll": {
+            "DryIoc": {
               "target": "Package",
-              "version": "[5.0.0-preview-01, )"
+              "version": "[5.4.3, )"
             },
             "Mailjet.Api": {
               "target": "Package",
@@ -60,37 +73,33 @@
             },
             "Microsoft.AspNetCore.Authentication.Facebook": {
               "target": "Package",
-              "version": "[5.0.10, )"
-            },
-            "Microsoft.AspNetCore.Identity": {
-              "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.10, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[5.0.8, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.10, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.10, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[8.0.7, )"
             },
             "Syncfusion.EJ2.AspNet.Core": {
               "target": "Package",
@@ -103,7 +112,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -115,39 +125,46 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_DataAccess\\BrandBucket_DataAccess.csproj": {
+    "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_DataAccess\\BrandBucket_DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_DataAccess\\BrandBucket_DataAccess.csproj",
+        "projectUniqueName": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_DataAccess\\BrandBucket_DataAccess.csproj",
         "projectName": "BrandBucket_DataAccess",
-        "projectPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_DataAccess\\BrandBucket_DataAccess.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_DataAccess\\obj\\",
+        "projectPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_DataAccess\\BrandBucket_DataAccess.csproj",
+        "packagesPath": "C:\\Users\\dme581\\.nuget\\packages\\",
+        "outputPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_DataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\dme581\\Application Data\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://build.idb-sys.com/app/nuget/feed/Development/DevelopmentGenerations/v2": {},
+          "https://build.idb-sys.com/app/nuget/feed/Production/DevelopmentProduction/v2": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj": {
-                "projectPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj"
+              "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj": {
+                "projectPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj"
               },
-              "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj": {
-                "projectPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj"
+              "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj": {
+                "projectPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj"
               }
             }
           }
@@ -156,35 +173,45 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNet.Mvc": {
-              "target": "Package",
-              "version": "[5.2.7, )"
-            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.10, )"
-            },
-            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
-              "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.10, )"
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[5.0.10, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.10, )"
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.11, )"
             }
           },
           "imports": [
@@ -193,42 +220,53 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj": {
+    "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj",
+        "projectUniqueName": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj",
         "projectName": "BrandBucket_Models",
-        "projectPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Models\\obj\\",
+        "projectPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Models\\BrandBucket_Models.csproj",
+        "packagesPath": "C:\\Users\\dme581\\.nuget\\packages\\",
+        "outputPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Models\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\dme581\\Application Data\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://build.idb-sys.com/app/nuget/feed/Development/DevelopmentGenerations/v2": {},
+          "https://build.idb-sys.com/app/nuget/feed/Production/DevelopmentProduction/v2": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -236,19 +274,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
-              "version": "[5.0.10, )"
+              "version": "[8.0.11, )"
             }
           },
           "imports": [
@@ -257,42 +297,53 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj": {
+    "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj",
+        "projectUniqueName": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj",
         "projectName": "BrandBucket_Utility",
-        "projectPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\ShoppingCartProject\\shoppingcart\\BrandBucket\\BrandBucket_Utility\\obj\\",
+        "projectPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Utility\\BrandBucket_Utility.csproj",
+        "packagesPath": "C:\\Users\\dme581\\.nuget\\packages\\",
+        "outputPath": "D:\\Jithin Projects\\Jithin Cursor Projects\\FloretPlace\\BrandBucket\\BrandBucket_Utility\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\dme581\\Application Data\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://build.idb-sys.com/app/nuget/feed/Development/DevelopmentGenerations/v2": {},
+          "https://build.idb-sys.com/app/nuget/feed/Production/DevelopmentProduction/v2": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -300,23 +351,25 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
           "dependencies": {
             "Braintree": {
               "target": "Package",
-              "version": "[4.17.0, )"
+              "version": "[5.39.0, )"
             },
             "Mailjet.Api": {
               "target": "Package",
               "version": "[1.2.2, )"
-            },
-            "Microsoft.AspNetCore.Identity.UI": {
-              "target": "Package",
-              "version": "[5.0.8, )"
             }
           },
           "imports": [
@@ -325,16 +378,20 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
